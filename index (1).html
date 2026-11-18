@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#1a1040">
+  <title>Bubble Blast - 10 Level Bubble Shooter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header id="hud">
+      <div class="stat"><span>LEVEL</span><b id="hudLevel">1</b></div>
+      <div class="stat"><span>SCORE</span><b id="hudScore">0</b></div>
+      <div class="stat accent"><span>SHOTS LEFT</span><b id="hudLeft">0</b></div>
+      <div class="stat"><span>FIRED</span><b id="hudFired">0</b></div>
+      <div class="stat"><span>BEST</span><b id="hudBest">0</b></div>
+    </header>
+
+    <div id="stage">
+      <canvas id="game" width="480" height="720"></canvas>
+      <div id="overlay" class="overlay"></div>
+    </div>
+
+    <footer id="bar">
+      <span id="dropInfo"></span>
+      <div class="tools">
+        <button id="btnMute" title="Sound (M)">🔊</button>
+        <button id="btnRestart" title="Restart (R)">↻</button>
+        <button id="btnMenu" title="Menu">☰</button>
+      </div>
+    </footer>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
